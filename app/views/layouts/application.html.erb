@@ -16,15 +16,15 @@
     <span><%= CONFIG['tagline'].html_safe %></span>
     <ul>
       <% if CONFIG['twitter'] %>
-        <li><%= link_to '@' + CONFIG['twitter'], 'http://twitter.com/' + CONFIG['twitter'] %></li>
+        <li class="icon-twitter"><%= link_to '@' + CONFIG['twitter'], 'http://twitter.com/' + CONFIG['twitter'] %></li>
       <% end %>
       <% if CONFIG['github'] %>
-        <li><%= link_to 'github', 'https://github.com/' + CONFIG['github'] %></li>
+        <li class="icon-github"><%= link_to 'github', 'https://github.com/' + CONFIG['github'] %></li>
       <% end %>
       <% if CONFIG['email'] %>
-        <li><%= link_to 'say hi', "mailto:#{CONFIG['email']}?subject:whats up!" %></li>
+        <li class="icon-email"><%= link_to 'say hi', "mailto:#{CONFIG['email']}?subject:whats up!" %></li>
       <% end %>
-      <li><%= link_to 'rss feed', '/posts.rss' %></li>
+      <li class="icon-feed"><%= link_to 'rss feed', '/posts.rss' %></li>
     </ul>
     <span class="powered-by">
       Powered by <a href="http://github.com/natew/obtvse.git">Obtvse</a>
